@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span{
+    font-size: 8rem;
+    font-weight: bold;
+    font-family:sans-serif;
+    letter-spacing: 15px;
+    color: red;
+    text-shadow: 0px 1px 0px #ff0a0a,
+                 0px 2px 0px #ff0a0a,
+                 0px 3px 0px #ff0a0a,
+                 0px 4px 0px #ff0a0a,
+                 0px 5px 0px #ff0a0a,
+                 0px 6px 0px #ff0a0a,
+                 0px 7px 0px #ff0a0a;
+    animation: 5s move linear infinite;
+}
+
+@keyframes move {
+    50%{
+        transform: translateY(-50px);
+        text-shadow: 0px 1px 0px #ff0a0a,
+                 0px 2px 0px #ff0a0a,
+                 0px 3px 0px #ff0a0a,
+                 0px 4px 0px #ff0a0a,
+                 0px 5px 0px #ff0a0a,
+                 0px 6px 0px #ff0a0a,
+                 0px 7px 0px #ff0a0a,
+                 0px 8px 0px #ff0a0a,
+                 0px 9px 0px #ff0a0a,
+                 0px 50px 20px #ccc;
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+span:nth-child(1){animation-delay: .5s;}
+span:nth-child(2){animation-delay: 1s;}
+span:nth-child(3){animation-delay: 1.5s;}
+span:nth-child(4){animation-delay: 2s;}
+span:nth-child(5){animation-delay: 2.5s;}
+span:nth-child(6){animation-delay: 3s;}
+span:nth-child(7){animation-delay: 3.5s;}
+span:nth-child(8){animation-delay: 4s;}
+span:nth-child(9){animation-delay: 4.5s;}
