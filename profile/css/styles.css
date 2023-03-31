@@ -48,6 +48,7 @@ a{
     text-decoration: none;
 }
 
+
 a:hover{
     color: #eaf6f6;
 }
@@ -119,12 +120,11 @@ a:hover{
 }
 
 .cmp-img{
-    
+    width: 50%;
     float: right;
-    margin-left: 80px;
-    margin-top: 50px;
-    padding-right: 80px;
-    
+    margin-top: 10%;
+    margin-left: 5%;
+    padding-right: 0%;
 }
 .hobby{
     width: 20%;
