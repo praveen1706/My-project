@@ -1,0 +1,122 @@
+.container{
+    width: 1366px;
+    height: 657px;
+    position: relative;
+    background-image: url("background.jpg");
+    /* background-repeat: no-repeat; */
+    background-color: cover;
+    animation: animate 500s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+    }
+    50%{
+        background-position: 1000px;
+    }
+    100%{
+        background-position: 1000px;
+    }
+}
+
+.road{
+    width: 1330px;
+    height: 130px;
+    background-color: black;
+    position: absolute;
+    top: 75%;
+    left: 0%;
+    transform-origin: bottom;
+    transform-style: preserve-3d;
+    transform: perspective(200px) rotateX(20deg);
+}
+
+.road:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(90deg, white 0%, white 70%, black 70%, black 100%);
+    background-size: 200px;
+    animation: road 5s linear infinite;
+}
+
+@keyframes road {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 200px;
+    }
+}
+
+.road:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background: black;
+    bottom: -30px;
+    transform-origin: top;
+    transform: perspective(1200px) rotateX(-20deg);    
+}
+
+img{
+    position: absolute;
+    height: 300px;
+    top: 50%;
+    right: 0;
+    animation: moonwalk 10s linear infinite;
+}
+
+@keyframes moonwalk {
+    0%{
+    }
+    100%{
+        transform: translateX(-1000px);
+    }    
+}
+
+audio{
+    outline: none;
+    display: none;
+}
+
+
+@media (max-width: 1030px) {
+    .container{
+        width: 650px;
+        height: 450px;
+        background-color: cover;
+    }
+    .road{
+        width: 640px;
+        height: 40px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        transform-origin: bottom;
+        transform-style: preserve-3d;
+        transform: perspective(30px) rotateX(20deg);
+    }       
+
+    img{
+        position: absolute;
+        height: 200px;
+        top: 70%;
+        right: 0;
+        animation: moonwalk 5s linear infinite;
+    }
+    
+    @keyframes moonwalk {
+        50%{
+            
+        }
+        100%{
+            transform: translateX(-500px);
+        }  
+    }
+}
