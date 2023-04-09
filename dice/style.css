@@ -1,0 +1,55 @@
+.container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.dice{
+    text-align: center;
+    display: inline-block;
+}
+
+body{
+    background-color: darkslategrey;
+}
+h1{
+    margin: 30px;
+    font-size: 5rem;
+    font-family: cursive;
+    text-shadow: 5px 0 #232931;
+    color: aqua;
+}
+p{
+    font-size: 2rem;
+    color: aqua;
+    font-family:cursive;
+}
+.img{
+    width: 80%;
+}
+
+footer{
+    margin-top: 5%;
+    color: #EEEEEE;
+    text-align: center;
+    font-family: cursive;
+}
+
+@media(max-width:1800px) and (min-width:546px){
+    h1{
+        font-size: 2.3rem;
+    }
+    .img{
+        width: 50%;
+    }
+    
+}
+
+@media (max-width:545px) {
+    h1{
+        font-size: 2rem;
+    }
+    .img{
+        width: 40%;
+    }
+}
