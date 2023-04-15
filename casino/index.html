@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <div class="top">
+            <div class="heading">
+                <h1 class="title">CASINO</h1>
+            </div>
+            <div class="container">
+                <div class="battery"></div>
+            </div>
+        </div>
+        <div class="screenContainer">
+            <input type="text" class="screen" placeholder="0" disabled>
+        </div>
+
+        <div class="keyboard">
+            <button onclick="Clear()" class="btn clear allClear">AC</button>
+            <button onclick="del()" class="btn clear delete">Del</button>
+            <button onclick="display('%')"  class="btn percent">%</button>
+            <button onclick="display('/')"  class="btn operatorBtn">&divide;</button>
+
+            <button onclick="display('7')"  class="btn num">7</button>
+            <button onclick="display('8')"  class="btn num">8</button>
+            <button onclick="display('9')"  class="btn num">9</button>
+            <button onclick="display('*')"  class="btn operatorBtn">&times;</button>
+            
+            <button onclick="display('4')"  class="btn num">4</button>
+            <button onclick="display('5')"  class="btn num">5</button>
+            <button onclick="display('6')"  class="btn num">6</button>
+            <button onclick="display('-')"  class="btn operatorBtn minus">-</button>
+            
+            <button onclick="display('1')"  class="btn num">1</button>
+            <button onclick="display('2')"  class="btn num">2</button>
+            <button onclick="display('3')"  class="btn num">3</button>
+            <button onclick="display('+')"  class="btn operatorBtn">+</button>
+            <button onclick="display('0')" class="btn num">0</button>
+            <button onclick="display('00')"  class="btn num">00</button>
+            <button onclick="display('.')"  class="btn num dot">.</button>
+            
+            <button onclick="calculate()" class="btn equalBtn">=</button>
+
+            
+        </div>
+    </div>
+    
+    <script src="casino.js"></script>
+
+</body>
+</html>
